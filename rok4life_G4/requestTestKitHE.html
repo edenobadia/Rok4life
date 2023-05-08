@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<button onclick="english()">English</button>
+<button onclick="hebrew()">עברית</button>
+<script>
+      function english() {
+        window.location.href = "requestTestKit.html";
+      }
+      function hebrew() {
+        window.location.href = "requestTestKitHE.html";
+      }
+    </script>
+</body>
+</html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Request test kit</title>
+
+  <!-- CSS FILES -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-8 col-12 d-flex flex-wrap">
+        <p class="d-flex me-4 mb-0">
+
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+        <ul class="social-icon">
+          <li class="social-icon-item">
+            <a href="#" class="social-icon-link bi-twitter"></a>
+          </li>
+
+          <li class="social-icon-item">
+            <a href="https://www.facebook.com/rocktodna/" class="social-icon-link bi-facebook"></a>
+          </li>
+
+          <li class="social-icon-item">
+            <a href="https://www.instagram.com/roktolife/" class="social-icon-link bi-instagram"></a>
+          </li>
+
+          <li class="social-icon-item">
+            <a href="#" class="social-icon-link bi-youtube"></a>
+          </li>
+
+          <li class="social-icon-item">
+            <a href="#" class="social-icon-link bi-whatsapp"></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-light shadow-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" class="logo img-fluid" alt="Kind Heart Charity">
+      <span>
+                        Rok4Life
+                        <small>ארגון ללא מטרות רווח</small>
+                    </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link click-scroll" href="index.html">בית</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link click-scroll" href="volunteers.html">התנדבות</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link click-scroll" href="about.html">אודות</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link click-scroll" href="contact.html">יצירת קשר</a>
+        </li>
+
+        <li class="nav-item ms-3">
+          <a class="nav-link custom-btn custom-border-btn btn" href="check.html">הזמנת ערכת בדיקה</a>
+        </li>
+
+        <li class="nav-item ms-3">
+          <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">תרומה</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section class="request-section">
+    <div class="section-overlay"></div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-12 mx-auto">
+          <form class="custom-form donate-form" action="#" method="get" role="form">
+            <h3 class="mb-4">Rok4Life הזמנת ערכת בדיקה מ</h3>
+
+            <div class="row">
+              <div class="col-lg-12 col-12">
+                <h5 class="mt-1">פרטים אישיים</h5>
+              </div>
+
+              <div class="col-lg-4 col-6 mt-1">
+                <h7 class="mt-2">:שם מלא</h7>
+              </div>
+
+              <div class="col-lg-12 col-6 mt-1">
+                <input type="text" name="donation-name" id="donation-name" class="form-control" placeholder="השם שלך" required>
+              </div>
+
+              <div class="col-lg-4 col-12 mt-2">
+                <h7 class="mt-1">:מס' ת.ז</h7>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+                <input type="text" name="ID-number" id="ID-number" class="form-control" placeholder="הכנס בבקשה 9 ספרות של ת.ז" required>
+              </div>
+              <div class="col-lg-4 col-12 mt-2">
+                <h7 class="mt-1">:תאריך לידה</h7>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+                <input type="text" name="birth-date" id="birth-date" class="form-control" placeholder="תזכורת! התרומה אפשרית רק לגילאי 18-45" required>
+              </div>
+              <div class="col-lg-4 col-12 mt-2">
+                <h7 class="mt-1">:כתובת דואר אלקטרוני</h7>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+                <input type="email" name="donation-email" id="donation-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="youremail@gmail.com" required>
+              </div>
+
+              <div class="col-lg-4 col-12 mt-2">
+                <h7 class="mt-1">:מספר טלפון</h7>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+                <input type="text" name="phone-number" id="phone-number" class="form-control" placeholder="050-1234567" required>
+              </div>
+
+
+
+              <div class="col-lg-12 col-12 mt-3">
+                <h5 class="mt-1">פרטי משלוח</h5>
+              </div>
+
+              <div class="col-lg-4 col-12 mt-2">
+                <h7 class="mt-1">:עיר</h7>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+                <input type="text" name="delivery-city" id="delivery-city" class="form-control" required>
+              </div>
+              <div class="col-lg-4 col-12 mt-2">
+                <h7 class="mt-1">:רחוב</h7>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+                <input type="text" name="delivery-street" id="delivery-street" class="form-control" required>
+              </div>
+              <div class="col-lg-4 col-12 mt-2">
+                <h7 class="mt-1">:מספר בית</h7>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+                <input type="text" name="delivery-house" id="delivery-house" class="form-control" required>
+              </div>
+              <div class="col-lg-4 col-12 mt-2">
+                <h7 class="mt-1">:מספר דירה</h7>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+                <input type="text" name="delivery-apartment" id="apartment" class="form-control" required>
+              </div>
+              <div class="col-lg-4 col-12 mt-2">
+                <h7 class="mt-1">:מיקוד</h7>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+                <input type="text" name="delivery-postal-code" id="delivery-postal-code" class="form-control" required>
+              </div>
+              <div class="col-lg-12 col-12">
+                <h5 class="mt-4 pt-1">בחירת שיטת שילוח</h5>
+              </div>
+
+              <div class="col-lg-12 col-12 mt-2">
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="DonationPayment" id="flexRadioDefault10">
+                  <label class="form-check-label" for="flexRadioDefault10">
+                    משלוח בדואר
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="DonationPayment" id="flexRadioDefault9">
+                  <label class="form-check-label" for="flexRadioDefault9">
+                    משלוח עד הבית ע"י מתנדב
+                  </label>
+                </div>
+                <div class="form-check mt-5">
+                  <input class="form-check-input" type="checkbox" name="DonationPayment" id="flexRadioDefault11">
+                  <label class="form-check-label" for="flexRadioDefault10">
+                    Rok4Life אני מאשר קבלת מידע מ
+                  </label>
+                </div>
+                <button type="submit" class="form-control mt-4">שליחה</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-12 mb-4">
+        <img src="images/logo.png" class="logo img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <h5 class="site-footer-title mb-3">גישה מהירה</h5>
+
+        <ul class="footer-menu">
+          <li class="footer-menu-item"><a href="index.html" class="footer-menu-link">הסיפור שלנו</a></li>
+
+          <li class="footer-menu-item"><a href="volunteers.html" class="footer-menu-link">התנדבות בעמותה</a></li>
+
+          <li class="footer-menu-item"><a href="partners.html" class="footer-menu-link">השותפים שלנו</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 mx-auto">
+        <h5 class="site-footer-title mb-3">פרטי קשר</h5>
+
+        <p class="text-white d-flex mb-2">
+          <i class="bi-telephone me-2"></i>
+
+          <a href="tel: 120-240-9600" class="site-footer-link">
+            050-9008965
+          </a>
+        </p>
+
+        <p class="text-white d-flex">
+          <i class="bi-envelope me-2"></i>
+
+          <a href="mailto:info@yourgmail.com" class="site-footer-link">
+            rok4lifeisrael@gmail.com
+          </a>
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer-bottom">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-7 col-12">
+          <p class="copyright-text mb-0"><a href="#">Technion students for Rok4Life</a>
+          </p>
+        </div>
+
+        <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+          <ul class="social-icon">
+            <li class="social-icon-item">
+              <a href="#" class="social-icon-link bi-twitter"></a>
+            </li>
+
+            <li class="social-icon-item">
+              <a href="https://www.facebook.com/rocktodna/" class="social-icon-link bi-facebook"></a>
+            </li>
+
+            <li class="social-icon-item">
+              <a href="https://www.instagram.com/roktolife/" class="social-icon-link bi-instagram"></a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT FILES -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
