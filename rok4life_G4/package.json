@@ -1,0 +1,18 @@
+{
+  "name": "rok4life_g4",
+  "version": "1.0.0",
+  "description": "rok for life final project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Haya and the gang",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  }
+}

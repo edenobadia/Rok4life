@@ -74,7 +74,7 @@
 
     <nav class="navbar navbar-expand-lg bg-light shadow-lg">
         <div class="container">
-            <a class="navbar-brand" href="/index">
+            <a class="navbar-brand" href="/">
                 <img src="images/logo.png" class="logo img-fluid" alt="Kind Heart Charity">
                 <span>
                         Rok4Life
@@ -89,7 +89,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="/index">Home</a>
+                        <a class="nav-link click-scroll" href="/">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -120,22 +120,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-12 mx-auto">
-                        <form class="custom-form contact-form" action="#" method="post" role="form">
+                        <form class="custom-form contact-form" action="/contact" method="post" role="form">
                             <h2>Contact form</h2>
 
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="first-name" id="first-name" class="form-control" placeholder="First name" required>
+                                    <input type="text" name="fName" id="first-name" class="form-control" placeholder="First name" required>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Last name" required>
+                                    <input type="text" name="lName" id="last-name" class="form-control" placeholder="Last name" required>
                                 </div>
                             </div>
 
                             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
 
-                            <textarea name="message" rows="5" class="form-control" id="message" placeholder="How can we help you?"></textarea>
+                            <textarea name="message" rows="5" class="form-control" id="message" placeholder="How can we help you?" required></textarea>
 
                             <button id ="volunteer-submit" type="submit" class="form-control">Send Message</button>
                         </form>
@@ -155,7 +155,7 @@
                     <h5 class="site-footer-title mb-3">Quick Links</h5>
 
                     <ul class="footer-menu">
-                        <li class="footer-menu-item"><a href="/index" class="footer-menu-link">Our Story</a></li>
+                        <li class="footer-menu-item"><a href="/" class="footer-menu-link">Our Story</a></li>
 
                         <li class="footer-menu-item"><a href="/volunteers" class="footer-menu-link">Become a volunteer</a></li>
 

@@ -82,7 +82,7 @@
 
         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
             <div class="container">
-                <a class="navbar-brand" href="/index">
+                <a class="navbar-brand" href="/">
                     <img src="images/logo.png" class="logo img-fluid" alt="Kind Heart Charity">
                     <span>
                         Rok4Life
@@ -97,7 +97,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="/index">Home</a>
+                            <a class="nav-link click-scroll" href="/">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -132,7 +132,7 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-12 mx-auto">
-                            <form class="custom-form donate-form" action="#" method="get" role="form">
+                            <form class="custom-form donate-form" action="/testkit" method="post" role="form">
                                 <h3 class="mb-4">Rok 4 Life Test Kit</h3>
 
                                 <div class="row">
@@ -145,7 +145,7 @@
                                     </div>
 
                                     <div class="col-lg-12 col-6 mt-1">
-                                        <input type="text" name="donation-name" id="donation-name" class="form-control" placeholder="Your name" required>
+                                        <input type="text" name="name" id="donation-name" class="form-control" placeholder="Your name" required>
                                     </div>
 
                                     <div class="col-lg-4 col-12 mt-2">
@@ -153,21 +153,21 @@
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
-                                        <input type="text" name="ID-number" id="ID-number" class="form-control" placeholder="Please enter a 9 digits number" required>
+                                        <input type="text" name="idNumber" id="ID-number" class="form-control" placeholder="Please enter a 9 digits number" required>
                                     </div>
                                     <div class="col-lg-4 col-12 mt-2">
                                         <h7 class="mt-1">Birth Date:</h7>
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
-                                        <input type="text" name="birth-date" id="birth-date" class="form-control" placeholder="Notice! only ages 18-45 can join" required>
+                                        <input type="text" name="birthDate" id="birth-date" class="form-control" placeholder="Notice! only ages 18-45 can join" required>
                                     </div>
                                     <div class="col-lg-4 col-12 mt-2">
                                         <h7 class="mt-1">E-mail Address:</h7>
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
-                                        <input type="email" name="donation-email" id="donation-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="youremail@gmail.com" required>
+                                        <input type="email" name="email" id="donation-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="youremail@gmail.com" required>
                                     </div>
 
                                     <div class="col-lg-4 col-12 mt-2">
@@ -175,7 +175,7 @@
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
-                                        <input type="text" name="phone-number" id="phone-number" class="form-control" placeholder="050-1234567" required>
+                                        <input type="text" name="phone" id="phone-number" class="form-control" placeholder="050-1234567" required>
                                     </div>
 
 
@@ -189,35 +189,35 @@
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
-                                        <input type="text" name="delivery-city" id="delivery-city" class="form-control" required>
+                                        <input type="text" name="city" id="delivery-city" class="form-control" required>
                                     </div>
                                     <div class="col-lg-4 col-12 mt-2">
                                         <h7 class="mt-1">Street:</h7>
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
-                                        <input type="text" name="delivery-street" id="delivery-street" class="form-control" required>
+                                        <input type="text" name="street" id="delivery-street" class="form-control" required>
                                     </div>
                                     <div class="col-lg-4 col-12 mt-2">
                                         <h7 class="mt-1">House Number:</h7>
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
-                                        <input type="text" name="delivery-house" id="delivery-house" class="form-control" required>
+                                        <input type="text" name="houseNumber" id="delivery-house" class="form-control" required>
                                     </div>
                                     <div class="col-lg-4 col-12 mt-2">
                                         <h7 class="mt-1">Apartment:</h7>
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
-                                        <input type="text" name="delivery-apartment" id="apartment" class="form-control" required>
+                                        <input type="text" name="apartment" id="apartment" class="form-control" required>
                                     </div>
                                     <div class="col-lg-4 col-12 mt-2">
                                         <h7 class="mt-1">Postal Code:</h7>
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
-                                        <input type="text" name="delivery-postal-code" id="delivery-postal-code" class="form-control" required>
+                                        <input type="text" name="postalCode" id="delivery-postal-code" class="form-control" required>
                                     </div>
                                     <div class="col-lg-12 col-12">
                                         <h5 class="mt-4 pt-1">Choose Delivery Method</h5>
@@ -226,19 +226,19 @@
                                     <div class="col-lg-12 col-12 mt-2">
 
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="DonationPayment" id="flexRadioDefault10">
+                                            <input class="form-check-input" type="radio" name="deliveryMethod" id="flexRadioDefault10" value="Post Office delivery">
                                             <label class="form-check-label" for="flexRadioDefault10">
                                                 Post Office delivery
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="DonationPayment" id="flexRadioDefault9">
+                                            <input class="form-check-input" type="radio" name="deliveryMethod" id="flexRadioDefault9" value="Home delivery by a volunteer">
                                             <label class="form-check-label" for="flexRadioDefault9">
                                                 Home delivery by a volunteer
                                             </label>
                                         </div>
                                         <div class="form-check mt-5">
-                                            <input class="form-check-input" type="checkbox" name="DonationPayment" id="flexRadioDefault11">
+                                            <input class="form-check-input" type="checkbox" name="approveInfo" id="flexRadioDefault11">
                                             <label class="form-check-label" for="flexRadioDefault10">
                                                 I approve receiving information from Rok 4 Life
                                             </label>
@@ -265,7 +265,7 @@
                         <h5 class="site-footer-title mb-3">Quick Links</h5>
 
                         <ul class="footer-menu">
-                            <li class="footer-menu-item"><a href="/index" class="footer-menu-link">Our Story</a></li>
+                            <li class="footer-menu-item"><a href="/" class="footer-menu-link">Our Story</a></li>
 
                             <li class="footer-menu-item"><a href="/volunteers" class="footer-menu-link">Become a volunteer</a></li>
 

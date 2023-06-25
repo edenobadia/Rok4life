@@ -80,7 +80,7 @@
 
         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
             <div class="container">
-                <a class="navbar-brand" href="/index">
+                <a class="navbar-brand" href="/">
                     <img src="images/logo.png" class="logo img-fluid" alt="Kind Heart Charity">
                     <span>
                         Rok4Life
@@ -95,7 +95,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="/index">Home</a>
+                            <a class="nav-link click-scroll" href="/">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -131,25 +131,25 @@
                         <div class="col-lg-6 col-12">
                             <h2 class="text-white mb-4">Volunteer</h2>
 
-                            <form class="custom-form volunteer-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                            <form class="custom-form volunteer-form mb-5 mb-lg-0" action="/volunteers" method="post" role="form">
                                 <h3 class="mb-4">Become a volunteer today</h3>
-
+                                
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
-                                        <input type="text" name="volunteer-name" id="volunteer-name" class="form-control" placeholder="Jack Doe" required>
+                                        <input type="text" name="name" id="volunteer-name" class="form-control" placeholder="Jack Doe" required>
                                     </div>
 
                                     <div class="col-lg-6 col-12">
-                                        <input type="email" name="volunteer-email" id="volunteer-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com" required>
+                                        <input type="email" name="email" id="volunteer-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com" required>
                                     </div>
 
                                     <div class="col-lg-6 col-12">
-                                        <input type="text" name="volunteer-subject" id="volunteer-subject" class="form-control" placeholder="Subject" required>
+                                        <input type="text" name="subject" id="volunteer-subject" class="form-control" placeholder="Subject" required>
                                     </div>
 
                                     <div class="col-lg-6 col-12">
                                         <div class="input-group input-group-file">
-                                            <input type="file" class="form-control" id="inputGroupFile02">
+                                            <input type="file" name="file" class="form-control" id="inputGroupFile02">
 
                                             <label class="input-group-text" for="inputGroupFile02">Upload your CV</label>
 
@@ -158,7 +158,7 @@
                                     </div>
                                 </div>
 
-                                <textarea name="volunteer-message" rows="3" class="form-control" id="volunteer-message" placeholder="Comment (Optional)"></textarea>
+                                <textarea name="message" rows="3" class="form-control" id="volunteer-message" placeholder="Comment (Optional)"></textarea>
 
                                 <button type="submit" class="form-control">Submit</button>
                             </form>
@@ -191,7 +191,7 @@
                         <h5 class="site-footer-title mb-3">Quick Links</h5>
 
                         <ul class="footer-menu">
-                            <li class="footer-menu-item"><a href="/index" class="footer-menu-link">Our Story</a></li>
+                            <li class="footer-menu-item"><a href="/" class="footer-menu-link">Our Story</a></li>
 
                             <li class="footer-menu-item"><a href="/volunteers" class="footer-menu-link">Become a volunteer</a></li>
 

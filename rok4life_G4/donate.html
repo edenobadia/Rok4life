@@ -77,7 +77,7 @@
 
         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
             <div class="container">
-                <a class="navbar-brand" href="/index.html">
+                <a class="navbar-brand" href="/">
                     <img src="images/logo.png" class="logo img-fluid" alt="Kind Heart Charity">
                     <span>
                         Rok4Life
@@ -92,7 +92,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="/index">Home</a>
+                            <a class="nav-link click-scroll" href="/">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -128,41 +128,44 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-12 mx-auto">
-                            <form class="custom-form donate-form" action="#" method="get" role="form">
+                            <form class="custom-form donate-form" action="/donate" method="post" role="form">
                                 <h3 class="mb-4">Make a donation</h3>
-
+                            
+                                <!-- Donation Frequency -->
                                 <div class="row">
                                     <div class="col-lg-12 col-12">
                                         <h5 class="mb-3">Donation Frequency</h5>
                                     </div>
-
+                            
                                     <div class="col-lg-6 col-6 form-check-group form-check-group-donation-frequency">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="DonationFrequency" id="DonationFrequencyOne" checked>
-                                            
+                                            <input class="form-check-input" type="radio" name="donationFrequency" id="DonationFrequencyOne" value="One Time" checked>
                                             <label class="form-check-label" for="DonationFrequencyOne">
                                                 One Time
                                             </label>
                                         </div>
                                     </div>
-
+                            
                                     <div class="col-lg-6 col-6 form-check-group form-check-group-donation-frequency">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="DonationFrequency" id="DonationFrequencyMonthly">
-                                            
+                                            <input class="form-check-input" type="radio" name="donationFrequency" id="DonationFrequencyMonthly" value="Monthly">
                                             <label class="form-check-label" for="DonationFrequencyMonthly">
                                                 Monthly
                                             </label>
                                         </div>
                                     </div>
-
+                                </div>
+                            
+                                <!-- Select an amount -->
+                                <div class="row">
                                     <div class="col-lg-12 col-12">
                                         <h5 class="mt-2 mb-3">Select an amount</h5>
                                     </div>
-
+                            
+                                    <!-- Radio button options -->
                                     <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <input class="form-check-input" type="radio" name="donationAmount" id="flexRadioDefault1" value="$10">
                                             <label class="form-check-label" for="flexRadioDefault1">
                                                 $10
                                             </label>
@@ -171,8 +174,8 @@
 
                                     <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                            <label class="form-check-label" for="flexRadioDefault2">
+                                            <input class="form-check-input" type="radio" name="donationAmount" id="flexRadioDefault1" value="$15">
+                                            <label class="form-check-label" for="flexRadioDefault1">
                                                 $15
                                             </label>
                                         </div>
@@ -180,8 +183,8 @@
 
                                     <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                            <label class="form-check-label" for="flexRadioDefault3">
+                                            <input class="form-check-input" type="radio" name="donationAmount" id="flexRadioDefault1" value="$20">
+                                            <label class="form-check-label" for="flexRadioDefault1">
                                                 $20
                                             </label>
                                         </div>
@@ -189,8 +192,17 @@
 
                                     <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                                            <label class="form-check-label" for="flexRadioDefault4">
+                                            <input class="form-check-input" type="radio" name="donationAmount" id="flexRadioDefault1" value="$25">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                $25
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-6 form-check-group">
+                                        <div class="form-check form-check-radio">
+                                            <input class="form-check-input" type="radio" name="donationAmount" id="flexRadioDefault1" value="$30">
+                                            <label class="form-check-label" for="flexRadioDefault1">
                                                 $30
                                             </label>
                                         </div>
@@ -198,63 +210,82 @@
 
                                     <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                                            <label class="form-check-label" for="flexRadioDefault5">
-                                                $45
+                                            <input class="form-check-input" type="radio" name="donationAmount" id="flexRadioDefault1" value="$35">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                $35
                                             </label>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
-                                            <label class="form-check-label" for="flexRadioDefault6">
-                                                $50
+                                            <input class="form-check-input" type="radio" name="donationAmount" id="flexRadioDefault1" value="$40">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                $40
                                             </label>
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6 col-12 form-check-group">
-                                        <div class="input-group">
-                                            <span class="input-group-text" id="basic-addon1">$</span>
-                                            
-                                            <input type="text" class="form-control" placeholder="Custom amount" aria-label="Username" aria-describedby="basic-addon1">
+                                    <div class="col-lg-3 col-md-6 col-6 form-check-group">
+                                        <div class="form-check form-check-radio">
+                                            <input class="form-check-input" type="radio" name="donationAmount" id="flexRadioDefault1" value="$45">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                $45
+                                            </label>
                                         </div>
                                     </div>
 
+
+                                    <div class="col-lg-12 col-12">
+                                        <h5 class="mt-1">Or you can add custom amount:</h5>
+                                    </div>
+
+                            
+                                    <!-- Other radio button options -->
+                            
+                                    <!-- Custom amount -->
+                                    <div class="col-lg-6 col-12 form-check-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">$</span>
+                                            <input type="text" class="form-control" name="customAmount" placeholder="Custom amount" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Personal Info -->
                                     <div class="col-lg-12 col-12">
                                         <h5 class="mt-1">Personal Info</h5>
                                     </div>
-
+                            
                                     <div class="col-lg-6 col-12 mt-2">
-                                        <input type="text" name="donation-name" id="donation-name" class="form-control" placeholder="Jack Doe" required>
+                                        <input type="text" name="name" id="donation-name" class="form-control" placeholder="Jack Doe" required>
                                     </div>
-
+                            
                                     <div class="col-lg-6 col-12 mt-2">
-                                        <input type="email" name="donation-email" id="donation-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com" required>
+                                        <input type="email" name="email" id="donation-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com" required>
                                     </div>
-
+                            
+                                    <!-- Choose Payment -->
                                     <div class="col-lg-12 col-12">
                                         <h5 class="mt-4 pt-1">Choose Payment</h5>
                                     </div>
-
+                            
                                     <div class="col-lg-12 col-12 mt-2">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="DonationPayment" id="flexRadioDefault9">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="flexRadioDefault9" value="Debit or Credit card">
                                             <label class="form-check-label" for="flexRadioDefault9">
                                                 <i class="bi-credit-card custom-icon ms-1"></i>
                                                 Debit or Credit card
                                             </label>
                                         </div>
-
+                            
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="DonationPayment" id="flexRadioDefault10">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="flexRadioDefault10" value="Paypal">
                                             <label class="form-check-label" for="flexRadioDefault10">
                                                 <i class="bi-paypal custom-icon ms-1"></i>
                                                 Paypal
                                             </label>
                                         </div>
-
+                            
                                         <button type="submit" class="form-control mt-4">Submit Donation</button>
                                     </div>
                                 </div>
@@ -277,7 +308,7 @@
                         <h5 class="site-footer-title mb-3">Quick Links</h5>
 
                         <ul class="footer-menu">
-                            <li class="footer-menu-item"><a href="/index" class="footer-menu-link">Our Story</a></li>
+                            <li class="footer-menu-item"><a href="/" class="footer-menu-link">Our Story</a></li>
 
                             <li class="footer-menu-item"><a href="/volunteers" class="footer-menu-link">Become a volunteer</a></li>
 
@@ -339,6 +370,7 @@
                 </div>
             </div>
         </footer>
+
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
